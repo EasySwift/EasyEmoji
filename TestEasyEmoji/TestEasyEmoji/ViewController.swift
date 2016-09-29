@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func textChange(sender: UITextField) {
+    @IBAction func textChange(_ sender: UITextField) {
         if let str = sender.text {
             print(containEmoji(str))
         }

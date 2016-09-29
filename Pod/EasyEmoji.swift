@@ -22,12 +22,11 @@ public var Emojis: String {
 
  - returns: 判断结果
  */
-public func containEmoji(str: String) -> Bool {
+public func containEmoji(_ str: String) -> Bool {
     for s in str.characters {
-        if Emojis.containsString(String.init(s)) == true {
+        if Emojis.contains(String.init(s)) == true {
             return true
         }
     }
-
     return false
 }
